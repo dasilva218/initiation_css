@@ -1,6 +1,7 @@
 # Niveau 1 : Bases du CSS
 
 ## Exercice 1 : Ajouter des styles en ligne
+``` css 
 Créez une page HTML contenant un titre, un paragraphe et un lien, puis ajoutez des styles directement avec l'attribut style :
 Changez la couleur du titre en bleu.
 Mettez le paragraphe en italique.
