@@ -1,0 +1,14 @@
+/* Changer la couleur de tous les paragraphes en vert */
+p {
+  color: green;
+}
+
+/* Appliquer une bordure rouge aux paragraphes qui ont la classe .important */
+p.important {
+  border: 9px solid red;
+}
+
+/* Changer le fond de la première section avec l'ID #section1 en jaune */
+#section1 {
+  background-color: yellow;
+}

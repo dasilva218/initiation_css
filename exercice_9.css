@@ -1,0 +1,42 @@
+/* Conteneur principal de la grille */
+.grid-container {
+  display: grid; /* Activer CSS Grid */
+  grid-template-columns: 1fr 2fr 1fr; /* Définir une grille de 3 colonnes */
+  grid-template-rows: auto 1fr; /* Définir une grille de 2 lignes */
+  height: 100vh; /* Hauteur de la fenêtre */
+  gap: 10px; /* Espacement entre les éléments de la grille */
+}
+
+/* Style pour l'en-tête */
+.header {
+  grid-column: 1 / -1; /* L'en-tête occupe toute la largeur de la grille */
+  background-color: lightblue; /* Couleur de fond */
+  padding: 20px; /* Padding interne */
+  text-align: center; /* Centrer le texte */
+  font-size: 24px; /* Taille de la police */
+}
+
+/* Style pour le menu */
+.menu {
+  grid-column: 1 / 2; /* Le menu occupe la première colonne */
+  background-color: lightgreen; /* Couleur de fond */
+  padding: 20px; /* Padding interne */
+  font-size: 18px; /* Taille de la police */
+}
+
+/* Style pour le contenu principal */
+.content {
+  grid-column: 2 / 4; /* Le contenu occupe les deux dernières colonnes */
+  background-color: lightcoral; /* Couleur de fond */
+  padding: 20px; /* Padding interne */
+  font-size: 18px; /* Taille de la police */
+}
+
+/* Style pour le pied de page */
+.footer {
+  grid-column: 1 / -1; /* Le pied de page occupe toute la largeur de la grille */
+  background-color: lightgrey; /* Couleur de fond */
+  padding: 20px; /* Padding interne */
+  text-align: center; /* Centrer le texte */
+  font-size: 16px; /* Taille de la police */
+}

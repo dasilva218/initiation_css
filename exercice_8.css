@@ -1,0 +1,48 @@
+/* Conteneur principal */
+.container {
+  text-align: center; /* Centrer le texte */
+  margin-top: 50px; /* Ajouter de l'espace en haut du conteneur */
+}
+
+/* Style pour les boutons */
+.btn {
+  background-color: lightblue; /* Couleur de fond initiale */
+  color: white; /* Couleur du texte */
+  padding: 10px 20px; /* Padding autour du texte */
+  border: none; /* Enlever la bordure par défaut */
+  cursor: pointer; /* Changer le curseur au survol */
+  transition: background-color 0.5s; /* Ajouter une transition pour le changement de couleur */
+}
+
+/* Changement de couleur au survol */
+.btn:hover {
+  background-color: darkblue; /* Changer la couleur de fond au survol */
+}
+
+/* Style pour la boîte animée */
+.boite {
+  display: flex; /* Active Flexbox sur les boîtes */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  width: 100px; /* Largeur de la boîte */
+  height: 100px; /* Hauteur de la boîte */
+  background-color: orange; /* Couleur de fond de la boîte */
+  margin: 50px auto; /* Centrer la boîte horizontalement */
+  position: relative; /* Position relative pour l'animation */
+  animation: mouvement 2s infinite; /* Appliquer l'animation avec une durée de 2s et une répétition infinie */
+}
+
+/* Animation @keyframes pour bouger la boîte de gauche à droite */
+@keyframes mouvement {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: calc(
+      100% - 100px
+    ); /* Positionner à droite de l'écran moins la largeur de la boîte */
+  }
+  100% {
+    left: 0;
+  }
+}

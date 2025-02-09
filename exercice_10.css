@@ -1,0 +1,31 @@
+/* Conteneur principal de la grille */
+.grid-container {
+  display: grid; /* Activer CSS Grid */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Définir une grille de 3 colonnes égales */
+  gap: 10px; /* Espacement entre les éléments de la grille */
+  padding: 10px; /* Padding autour de la grille */
+}
+
+/* Style pour les boîtes */
+.box {
+  background-color: lightblue; /* Couleur de fond des boîtes */
+  padding: 20px; /* Padding interne des boîtes */
+  text-align: center; /* Centrer le texte */
+  font-size: 18px; /* Taille de la police */
+}
+
+/* Les images s'ajustent à 100% de la largeur du conteneur */
+.box img {
+  width: 100%; /* Largeur de l'image à 100% du conteneur */
+  height: auto; /* Hauteur automatique pour maintenir le ratio */
+}
+
+/* Media queries pour les écrans étroits (moins de 768px) */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Définir une seule colonne pour les écrans étroits */
+  }
+}

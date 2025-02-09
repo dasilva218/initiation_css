@@ -1,0 +1,26 @@
+/* Appliquer un dégradé de couleur de fond du bleu clair au blanc */
+body {
+  background: linear-gradient(to bottom, lightblue, white);
+  font-family: "Roboto Mono", sans-serif; /* Utiliser la police Roboto de Google Fonts */
+  margin: 0; /* Enlever les marges par défaut */
+  padding: 0; /* Enlever les padding par défaut */
+  display: flex; /* Utiliser Flexbox pour centrer le conteneur */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  height: 100vh; /* Hauteur de la fenêtre */
+}
+
+/* Conteneur principal */
+.container {
+  text-align: center; /* Centrer le texte */
+}
+
+/* Changer la taille des titres à 36px */
+h1 {
+  font-size: 36px;
+}
+
+/* Changer la taille des paragraphes à 18px */
+p {
+  font-size: 18px;
+}

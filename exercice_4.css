@@ -1,0 +1,24 @@
+/* Changer la couleur du premier paragraphe de chaque section en bleu */
+section p:first-of-type {
+  color: blue;
+}
+
+/* Changer la couleur du dernier paragraphe de chaque section en rouge */
+section p:last-of-type {
+  color: red;
+}
+
+/* Appliquer une bordure bleue aux liens qui commencent par https */
+a[href^="https"] {
+  border: 6px solid blue;
+}
+
+/* Changer la couleur des éléments impairs dans une liste ordonnée */
+ol li:nth-child(odd) {
+  color: green;
+}
+
+/* Changer la couleur des éléments h2 de chaque section */
+h2 {
+  color: blueviolet;
+}

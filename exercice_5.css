@@ -1,0 +1,9 @@
+/* Classe .boite pour styliser la section */
+/* Ajouter une bordure solide de 2px en noir */
+.boite {
+  border: 2px solid black;
+  /* Ajouter un padding de 20px à l'intérieur de la boîte */
+  padding: 20px;
+  /* Ajouter une marge de 15px autour de la boîte */
+  margin: 15px;
+}
