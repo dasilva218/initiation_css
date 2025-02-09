@@ -1,0 +1,13 @@
+h2 {
+    color: green;
+}
+
+.important {
+    border: 2px solid red;
+    padding: 10px;
+}
+
+#section1 {
+    background-color: yellow;
+    padding: 20px;
+}
