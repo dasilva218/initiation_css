@@ -1,0 +1,17 @@
+        section p:first-of-type {
+            color: blue; 
+        }
+
+        section p:last-of-type {
+            color: green; 
+        }
+
+        a[href^="https"] {
+            border: 2px solid blue;
+            padding: 5px;
+            text-decoration: none; 
+        }
+
+        ol li {
+            color: darkorange; 
+        }
