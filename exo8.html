@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 7</title>
+    <style>
+        /* Transition des boutons */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s ease; /* Transition pour le changement de couleur */
+        }
+
+        button:hover {
+            background-color: #2ecc71; /* Changement de couleur au survol */
+        }
+
+        /* Animation pour la boîte qui bouge de gauche à droite */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #e74c3c;
+            animation: moveLeftRight 2s infinite; /* L'animation dure 2 secondes et se répète à l'infini */
+        }
+
+        /* Définition de l'animation @keyframes */
+        @keyframes moveLeftRight {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(300px); /* Déplacement à 300px vers la droite */
+            }
+            100% {
+                transform: translateX(0); /* Retour à la position initiale */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations et Transitions</h1>
+    
+    <!-- Bouton avec effet de transition -->
+    <button>Survolez-moi</button>
+
+    <!-- Boîte animée qui bouge de gauche à droite -->
+    <div class="box"></div>
+</body>
+</html>

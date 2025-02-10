@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 9</title>
+    <style>
+        /* Mise en page de la grille */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: 200px 1fr 1fr; /* 3 colonnes : 1 pour le menu et 2 pour le contenu */
+            grid-template-rows: auto 1fr auto; /* 2 lignes : header et footer */
+            grid-template-areas: 
+                "header header header"
+                "menu content content"
+                "footer footer footer"; /* Définition des zones de la grille */
+            height: 100vh; /* Hauteur de la page sur toute la fenêtre */
+        }
+
+        /* Styles du header */
+        header {
+            grid-area: header;
+            background-color: #3498db;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styles du menu */
+        nav {
+            grid-area: menu;
+            background-color: #2ecc71;
+            padding: 20px;
+            color: white;
+        }
+
+        /* Styles du contenu principal */
+        main {
+            grid-area: content;
+            padding: 20px;
+        }
+
+        /* Styles du footer */
+        footer {
+            grid-area: footer;
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mon Site Web</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" style="color: white;">Accueil</a></li>
+            <li><a href="#" style="color: white;">À propos</a></li>
+            <li><a href="#" style="color: white;">Services</a></li>
+            <li><a href="#" style="color: white;">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Bienvenue sur mon site !</h2>
+        <p>Voici le contenu principal de la page. Cette section occupe deux colonnes dans la grille.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mon Site Web. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

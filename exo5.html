@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 5- Flexbox de base</title>
+    <style>
+        /* Conteneur Flexbox */
+        .container {
+            display: flex; /* Active le mode Flexbox */
+            justify-content: space-evenly; /* Espace égal entre les boîtes */
+            align-items: center; /* Centre les boîtes verticalement */
+            height: 100vh; /* Hauteur du conteneur égale à la hauteur de la fenêtre */
+        }
+
+        /* Boîtes */
+        .box {
+            width: 100px; /* Largeur de chaque boîte */
+            height: 100px; /* Hauteur de chaque boîte */
+            display: flex; /* Permet de centrer le contenu à l'intérieur de chaque boîte */
+            align-items: center; /* Centre le contenu verticalement dans la boîte */
+            justify-content: center; /* Centre le contenu horizontalement dans la boîte */
+            color: white; /* Couleur du texte à l'intérieur des boîtes */
+            font-weight: bold; /* Texte en gras */
+        }
+
+        /* Couleurs différentes pour chaque boîte */
+        .box1 {
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: green;
+        }
+
+        .box3 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box box1">Boîte 1</div>
+        <div class="box box2">Boîte 2</div>
+        <div class="box box3">Boîte 3</div>
+    </div>
+
+</body>
+</html>
