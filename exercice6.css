@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    border: 2px solid black;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: pink;
+}
+
+.box3 {
+    background-color: blue;
+}

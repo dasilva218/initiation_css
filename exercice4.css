@@ -1,0 +1,19 @@
+section p:first-of-type {
+    color: red;
+}
+
+section p:last-of-type {
+    color: rgb(235, 67, 131);
+}
+
+a[href^="https"] {
+    border: 2px solid blue;
+}
+
+em {
+    color: grey;
+}
+
+li {
+    color: brown;
+}

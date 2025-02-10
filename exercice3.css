@@ -1,0 +1,11 @@
+p {
+    color: green;
+}
+
+p.important {
+    border: 6px solid red;
+}
+
+#section1 {
+    background-color: yellow;
+}

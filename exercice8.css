@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+
+.button {
+    background-color: red;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.button:hover {
+    background-color: green;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: relative;
+    animation: moveBox 3s linear infinite;
+}
+
+@keyframes moveBox {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: calc(50% - 50px);
+    }
+
+    100% {
+        left: 0;
+    }
+}
